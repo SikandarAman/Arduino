@@ -3,7 +3,7 @@
 ## By Paul McWhorter
 
 Arduino_Basiks
-Welcome to the Arduino_Basiks repository! This collection contains a series of basic Arduino projects I did aimed at helping beginners understand Arduino programming and hardware interfacing.
+Welcome to the Arduino_Basiks repository!<br /> This collection contains a series of basic Arduino projects I did aimed at helping beginners understand Arduino programming and hardware interfacing.
 
 _Project List_
 
@@ -30,7 +30,6 @@ _Project List_
 20.IR_Remote - Working with an IR remote.
 21.MY_Remote - Custom IR remote functions.
 22.TheCode - Additional code examples.
-0.NOTES - Miscellaneous notes and information.
 ```
 
-# THANK YOU!!!
+### THANK YOU!!!
