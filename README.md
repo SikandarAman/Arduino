@@ -3,8 +3,9 @@
 ## By Paul McWhorter
 
 Arduino_Basiks
-Welcome to the Arduino_Basiks repository!<br /> This collection contains a series of basic Arduino projects I did aimed at helping beginners understand Arduino programming and hardware interfacing.
-
+Welcome to the Arduino_Basiks repository!<br /> This collection contains a series of basic Arduino projects I did aimed at helping beginners understand Arduino programming and hardware interfacing.<br /><br />
+The reference from where I studied --> [Youtube Link](https://www.youtube.com/playlist?list=PLGs0VKk2DiYw-L-RibttcvK-WBZm8WLEP)
+<br />
 _Project List_
 
 ```
