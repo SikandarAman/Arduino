@@ -1,0 +1,4 @@
+With grounding while taking inputs pinMode use 6.6K ohm resistor
+With simple led, use 220 ohm resistor while using output pinMode
+with photoresistors use 5K ohm resistor
+..// NOT DONE (JOYSTICKS, SERVOS, STEPPER, DC MOTOR, HUMITDITY, TEMPERATURE)
