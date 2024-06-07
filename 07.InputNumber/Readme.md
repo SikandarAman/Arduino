@@ -1,6 +1,8 @@
 # Arduino LED Blink Control via Serial Input
 
-This Arduino sketch allows you to control the blinking of an LED by entering the number of blinks through the serial monitor.
+This Arduino sketch allows you to control the blinking of an LED by entering the number of blinks through the serial monitor. Mainly learning the input in Serial monitor. 
+
+Note: ALWAYS REMEMBER TO SET THE SAME BAUT RATE IN IDE SERIAL MONITOR TERMIANL AS IN THE CODE, ohterwise it will not work. And set always no line ending in the serial monitor terminal.
 
 ## Description
 
