@@ -1,5 +1,5 @@
 {
     "board": "arduino:avr:uno",
-    "port": "COM5",
-    "sketch": "22.TheCode\\22.TheCode.ino"
+    "port": "COM3",
+    "sketch": "Fachon_Ke_Liye_Projekt\\Fachon_Ke_Liye_Projekt.ino"
 }
