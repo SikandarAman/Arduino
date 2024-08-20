@@ -70,7 +70,7 @@ void loop()
         }
 
         // Start memory game
-        int seq_length = 7;
+        int seq_length = 4 + level;
         int seq[seq_length];
         for (int i = 0; i < seq_length; i++)
         {
@@ -104,7 +104,7 @@ void loop()
                         if (digitalRead(button[k]) == LOW)
                         {
                             while (digitalRead(button[k]) == LOW)
-                                ; // Debounce button
+                                ; // Debounce button -- taaki jab tak press krke rakha pause ho jaye vhin pe
 
                             if (k == seq[j])
                             {
@@ -133,12 +133,12 @@ void loop()
         if (win)
         {
             Serial.println("You Win!");
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < level * 2; i++)
             {
                 digitalWrite(13, HIGH);
-                delay(250);
+                delay(250 / level);
                 digitalWrite(13, LOW);
-                delay(250);
+                delay(250 / level);
             }
         }
         else
