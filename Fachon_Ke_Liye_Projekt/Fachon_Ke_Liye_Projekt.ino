@@ -34,6 +34,18 @@ void loop()
     int led[] = {3, 4, 5, 6, 7};
     int button[] = {8, 9, 10, 11, 12};
 
+    // BUTTONS TESTER
+
+    //     while(1){
+    //     int button_state[5];
+    //     for(int i=0 ; i<5 ; i++){
+    //         button_state[i] = 1 - digitalRead(button[i]);
+    //         Serial.print(button_state[i]);
+    //         Serial.print(" ");
+    //     }
+    //     Serial.println();
+    // }
+
     // Start button check
     if (digitalRead(2) == LOW)
     {
@@ -72,14 +84,15 @@ void loop()
         // Start memory game
         int seq_length = 4 + level;
         int seq[seq_length];
-        for (int i = 0; i < seq_length; i++)
-        {
-            seq[i] = random(0, 5);
-        }
-
         int win = 1;
         for (int i = 1; i <= seq_length; i++)
-        {
+        { // seq[i-1] = random(0, 5); // Generate random sequence //very randomized than predeciding since time is taken inside loop which further randomize the random due to human involvement
+            // fuck this random shit doesn't work greatly produces 3 5 4 4 1 3 5 a lot of time stupid implementation
+            long long the_time = micros();
+
+            Serial.println("Time in Microseconds : " + String((unsigned long)the_time));
+
+            seq[i - 1] = (the_time % 5);
             delay(500);
 
             // Display sequence
@@ -88,7 +101,10 @@ void loop()
                 digitalWrite(led[seq[j]], HIGH);
                 delay(600 - (level * 100)); // Use the selected level as the delay factor
                 digitalWrite(led[seq[j]], LOW);
-                delay(600 - (level * 100));
+                if (j != i - 1)
+                {
+                    delay(600 - (level * 100));
+                }
             }
 
             // Wait for player to repeat the sequence
